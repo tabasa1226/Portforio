@@ -1,0 +1,46 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    ul{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 30px;
+        li{
+            list-style: none;
+            padding-left: 10px;
+            a{
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}
+main{
+    .container{
+        .first-view{
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: 32px;
+                font-weight: bold;
+                letter-spacing: 0.12em;
+                position: relative;
+            }
+            ::before{
+                content: "Hello!!";
+                position: absolute;
+                top: -45px;
+                left: 40%;
+                font-size: 25px;
+                letter-spacing: normal;
+            }
+        }
+    }
+}
