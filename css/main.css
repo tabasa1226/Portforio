@@ -1,2 +1,48 @@
-*{margin:0;padding:0}header ul{height:10vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;padding-right:30px}header ul li{list-style:none;padding-left:10px}header ul li a{color:#000;text-decoration:none}main .container .first-view{height:90vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}main .container .first-view h1{font-size:32px;font-weight:bold;letter-spacing:0.12em;position:relative}main .container .first-view ::before{content:"Hello!!";position:absolute;top:-45px;left:40%;font-size:25px;letter-spacing:normal}
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0);
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 30px;
+}
+header ul li {
+  list-style: none;
+  padding-left: 10px;
+}
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main .container .first-view {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/portforio-topview.png);
+}
+main .container .first-view h1 {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  position: relative;
+}
+main .container .first-view ::before {
+  content: "Hello!!";
+  position: absolute;
+  top: -45px;
+  left: 40%;
+  font-size: 25px;
+  letter-spacing: normal;
+}/*# sourceMappingURL=main.css.map */
