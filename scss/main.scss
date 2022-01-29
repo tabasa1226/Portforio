@@ -32,6 +32,8 @@ main{
             align-items: center;
             justify-content: center;
             background-image: url(../images/portforio-topview.png);
+            background-size: cover;
+            background-position-x: center;
             h1{
                 font-size: 32px;
                 font-weight: bold;
@@ -45,6 +47,31 @@ main{
                 left: 40%;
                 font-size: 25px;
                 letter-spacing: normal;
+            }
+        }
+        .about-me{
+            h2{
+                text-align: center;
+            }
+            .about-contents{
+                display: flex;
+                justify-content: center;
+                table{
+                    thead{
+                        tr{
+                            th{
+                                // color: red;
+                            }
+                        }
+                    }
+                }
+                .skills{
+                    ul{
+                        li{
+                            list-style: none;
+                        }
+                    }
+                }
             }
         }
     }

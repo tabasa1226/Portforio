@@ -31,6 +31,8 @@ main .container .first-view {
   align-items: center;
   justify-content: center;
   background-image: url(../images/portforio-topview.png);
+  background-size: cover;
+  background-position-x: center;
 }
 main .container .first-view h1 {
   font-size: 32px;
@@ -45,4 +47,14 @@ main .container .first-view ::before {
   left: 40%;
   font-size: 25px;
   letter-spacing: normal;
+}
+main .container .about-me h2 {
+  text-align: center;
+}
+main .container .about-me .about-contents {
+  display: flex;
+  justify-content: center;
+}
+main .container .about-me .about-contents .skills ul li {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
