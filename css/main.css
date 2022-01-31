@@ -1,2 +1,123 @@
-*{margin:0;padding:0}header{position:absolute;top:50px;right:30px;width:100%;height:10vh;background:rgba(0,0,0,0)}header ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:end;padding-right:30px}header ul li{list-style:none;padding-left:20px}header ul li a{position:relative;color:#fff;text-decoration:none}header ul li ::after{position:absolute;left:0;bottom:-3px;content:'';width:100%;height:2px;background-color:#fff;-webkit-transform:scale(0, 1);transform:scale(0, 1);-webkit-transform-origin:right top;transform-origin:right top;-webkit-transition:-webkit-transform 0.3s;transition:-webkit-transform 0.3s;transition:transform 0.3s;transition:transform 0.3s, -webkit-transform 0.3s}header ul li a:hover::after{-webkit-transform:scale(1, 1);transform:scale(1, 1);-webkit-transform-origin:left top;transform-origin:left top}main .container .first-view{height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-image:url(../images/portforio-topview.png);background-size:cover;background-position-x:center}main .container .first-view h1{font-size:32px;font-weight:bold;letter-spacing:0.12em;position:relative}main .container .first-view ::before{content:"Hello!!";position:absolute;top:-45px;left:40%;font-size:25px;letter-spacing:normal}main .container .about-me{margin-top:30px}main .container .about-me h2{text-align:center;margin-bottom:20px}main .container .about-me .prof-img{width:10%;height:10%;margin:0 auto}main .container .about-me .prof-img img{width:100%;border-radius:50%}main .container .about-me .about-contents{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}main .container .about-me .about-contents table{margin-right:20%;background-color:#FF99CC;padding:40px 30px;border-radius:20% 10% 40% 30% / 50% 20% 30% 10%}main .container .about-me .about-contents table thead tr th{font-size:24px}main .container .about-me .about-contents .skills{background-color:#CC6699;padding:50px 60px;border-radius:40% 10% 30% 20% / 30% 50% 10% 40%}main .container .about-me .about-contents .skills h3{font-size:24px}main .container .about-me .about-contents .skills ul li{list-style:none;padding-bottom:5px}main .container .about-me .PR{margin-top:20px;text-align:center}
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0);
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 30px;
+}
+header ul li {
+  list-style: none;
+  padding-left: 20px;
+}
+header ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+header ul li ::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s;
+}
+header ul li a:hover::after {
+  transform: scale(1, 1);
+  transform-origin: left top;
+}
+
+main .container .first-view {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/portforio-topview.png);
+  background-size: cover;
+  background-position-x: center;
+}
+main .container .first-view h1 {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  position: relative;
+}
+main .container .first-view ::before {
+  content: "Hello!!";
+  position: absolute;
+  top: -45px;
+  left: 40%;
+  font-size: 25px;
+  letter-spacing: normal;
+}
+main .container .about-me {
+  margin-top: 30px;
+}
+main .container .about-me h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .container .about-me .prof-img {
+  width: 10%;
+  height: 10%;
+  margin: 0 auto;
+}
+main .container .about-me .prof-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+main .container .about-me .about-contents {
+  display: flex;
+  justify-content: center;
+}
+main .container .about-me .about-contents table {
+  margin-right: 20%;
+  background-color: #FF99CC;
+  padding: 40px 30px;
+  border-radius: 20% 10% 40% 30%/50% 20% 30% 10%;
+}
+main .container .about-me .about-contents table thead tr th {
+  font-size: 24px;
+}
+main .container .about-me .about-contents .skills {
+  background-color: #CC6699;
+  padding: 50px 60px;
+  border-radius: 40% 10% 30% 20%/30% 50% 10% 40%;
+}
+main .container .about-me .about-contents .skills h3 {
+  font-size: 24px;
+}
+main .container .about-me .about-contents .skills ul li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+main .container .about-me .PR {
+  margin-top: 20px;
+  text-align: center;
+}
+main .container .works .works-contents .stucom {
+  display: flex;
+  justify-content: space-between;
+}
+main .container .works .works-contents .stucom .explanationn {
+  width: 50%;
+}
+main .container .works .works-contents .stucom img {
+  width: 50%;
+}/*# sourceMappingURL=main.css.map */

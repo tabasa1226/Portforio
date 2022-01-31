@@ -97,6 +97,13 @@ main{
                             }
                         }
                     }
+                    tbody{
+                        tr{
+                            td{
+                                
+                            }
+                        }
+                    }
                 }
                 .skills{
                     background-color: #CC6699;
@@ -116,6 +123,20 @@ main{
             .PR{
                 margin-top: 20px;
                 text-align: center;
+            }
+        }
+        .works{
+            .works-contents{
+                .stucom{
+                    display: flex;
+                    justify-content: space-between;
+                    .explanationn{
+                        width: 50%;
+                    }
+                    img{
+                        width: 50%;
+                    }
+                }
             }
         }
     }
