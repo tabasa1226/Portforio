@@ -172,3 +172,32 @@ main{
         }
     }
 }
+footer{
+    background-color: #F781F3;
+    color: #fff;
+    padding-top: 30px;
+    .fot-box{
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: #fff;
+        }
+        ul{
+            li{
+                list-style: none;
+                padding-bottom: 5px;
+            }
+        }
+        .contact{
+            dt{
+                padding-bottom: 5px;
+            }
+        }
+    }
+    span{
+        display: block;
+        font-size: small;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
