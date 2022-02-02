@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <title>Tabasa Matsubara | Portforio</title>
 </head>
@@ -19,7 +23,7 @@
             <div class="first-view">
                 <h1>Tabasa Matsubara</h1>
             </div>
-            <article class="about-me">
+            <article id="about-me">
                 <h2>About Me</h2>
                 <div class="prof-img"><img src="./images/prof-img.JPG"></div>
                 <div class="about-contents">
@@ -72,7 +76,7 @@
                         どうかよろしくお願いします。</p>
                 </div>
             </article>
-            <article class="works">
+            <article id="works">
                 <h2>Works</h2>
                 <div class="works-contents">
                     <div class="stucom">
@@ -81,9 +85,35 @@
                             <h4>作品概要</h4>
                             <p>勉強のモチベーションアップのためのコミュニケーションSNSです。<br>
                                 同じ程度の勉強意欲を持ったユーザーが集まることで情報共有ややる気アップを図る事を目的に企画しました。</p>
-                            </p>
-                            <h4>工夫した点など</h4>
+                            <h4>工夫した点</h4>
+                            <p>画面移動を楽にするために主要な機能はタブで移動できるようにしました。<br>
+                                見やすさを重視したデザインを意識しました。</p>
+                            <div class="txt-sub">
+                                <h4>制作時間</h4>
+                                <p>1週間</p>
+                                <h4>使用ツール</h4>
+                                <p>XD</p>
+                            </div>
                         </div>
-                        <img src="./images/stacom-mockup.png">
-            </body>
+                        <section>
+                            <a href="#modal-stucom" class="img-wrap"><img src="./images/stacom-mockup.png"></a>
+                            <div class="remodal" data-remodal-id="modal-stucom">
+                                    <p><img src="./images/top.png"></p>
+                                    <p><img src="./images/community.png"></p>
+                                    <p><img src="./images/mypage.png"></p>
+                              <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                            </div>
+                          </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#works">Works</a></li>
+        </ul>
+    </footer>
+</body>
 </html>
