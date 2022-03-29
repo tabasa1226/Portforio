@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +17,23 @@
     <title>Tabasa Matsubara | Portforio</title>
 </head>
 <body>
+    <script>
+        $(function(){
+            $('a[href^="#"]').click(function(){
+                var adjust = 0;
+                var speed = 400;
+                var href= $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top + adjust;
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
     <header>
         <ul class="head">
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Works</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#works">Works</a></li>
         </ul>
     </header>
     <main>
@@ -96,17 +110,11 @@
                                 <h4>制作時間</h4>
                                 <p>1週間</p>
                                 <h4>使用ツール/言語</h4>
-                                <p>XD</p>
+                                <p>AdobeXD/Illustrator</p>
                             </div>
                         </div>
                         <section>
-                            <a href="#modal-stucom" class="img-wrap"><img src="./images/stacom-mockup.png"></a>
-                            <div class="remodal" data-remodal-id="modal-stucom">
-                                    <p><img src="./images/top.png"></p>
-                                    <p><img src="./images/community.png"></p>
-                                    <p><img src="./images/mypage.png"></p>
-                                <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
-                            </div>
+                            <a href="about-stucom.html" target="_blank" class="img-wrap"><img src="./images/stacom-mockup.png"></a>
                         </section>
                     </div>
                     <div class="muzirushi">
@@ -115,21 +123,18 @@
                             <h4>作品概要</h4>
                             <p>授業内にて無印良品様の実際の商品をテーマにサイトを作りました。<br>
                                 私は無印良品様のアロマストーンをテーマに作成しました。</p>
+                            <h4>工夫した点</h4>
+                            <p>商品自体の温かみを感じられるような配色を考えました。<br>
+                                どんな人に見て欲しいのかなどのコンセプトを考え、それに沿ったサイト作りをしました。</p>
                             <div class="txt-sub">
                                 <h4>制作時間</h4>
                                 <p>2週間</p>
                                 <h4>使用ツール/言語</h4>
-                                <p>XD/HTML/CSS</p>
+                                <p>AdobeXD/HTML/CSS</p>
                             </div>
                         </div>
                         <section>
-                            <a href="#modal-muzirushi" class="img-wrap"><img src="./images/muzirushi-mockup.png"></a>
-                            <div class="remodal" data-remodal-id="modal-muzirushi">
-                                <p><img src="./images/muzirushi_pc.png"></p>
-                                <p><img src="./images/muzirushi_mobile.png"></p>
-                                <p><img src="./images/muziruhsi_thema.png"></p>
-                                <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
-                            </div>
+                            <a href="about-muzirushi.html" target="_blank" class="img-wrap"><img src="./images/muzirushi-mockup.png"></a>
                         </section>
                     </div>
                 </div>
