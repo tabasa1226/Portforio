@@ -11,13 +11,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30%;
-        height: 100px;
+        width: 100%;
         margin-left: 50px;
         margin-top: 30%;
         color: #fff;
-        background-color: #E066D9;
-        border-radius: 80% 90% 70% 90% / 90% 60% 80% 70%;
+        background-image: url(../images/blob_11-4-80.svg);
+        background-size: 600px 100%;
+        background-position: center;
     }
     img{
         width: 70%;
@@ -28,6 +28,12 @@
     padding-bottom: 30px;
     div{
         padding-bottom: 15px;
+    }
+    .ingenuty-img{
+        width: 70%;
+        img{
+            width: 100%;
+        }
     }
 }
 .back{
