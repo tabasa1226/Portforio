@@ -18,6 +18,10 @@
         background-image: url(../images/blob_11-4-80.svg);
         background-size: 600px 100%;
         background-position: center;
+        @-moz-document url-prefix(){
+            width: 30%;
+            margin-left: 45px;
+        }
     }
     img{
         width: 70%;
